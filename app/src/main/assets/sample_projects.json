@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Village Road Repair",
+    "description": "Repairing the main road connecting the village to the highway. This includes filling potholes, laying a new asphalt layer, and improving drainage on both sides of the road to prevent waterlogging during monsoons.",
+    "budget": "₹5,00,000",
+    "status": "In Progress",
+    "progress": 65,
+    "expectedCompletionDate": "20 Dec 2024",
+    "imageUrl": "https://images.unsplash.com/photo-1596395819057-e37f55a85199?q=80&w=400&auto=format&fit=crop",
+    "beforeImageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=400&auto=format&fit=crop",
+    "afterImageUrl": "https://images.unsplash.com/photo-1596395819057-e37f55a85199?q=80&w=400&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "title": "New Community Hall",
+    "description": "Construction of a new multi-purpose community hall for village gatherings, festivals, and educational workshops. The hall will feature a stage, seating for 300 people, and basic amenities.",
+    "budget": "₹15,00,000",
+    "status": "Pending",
+    "progress": 0,
+    "expectedCompletionDate": "15 Mar 2025",
+    "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=400&auto=format&fit=crop",
+    "beforeImageUrl": "https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?q=80&w=400&auto=format&fit=crop",
+    "afterImageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=400&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "title": "Solar Street Lights",
+    "description": "Installation of 50 energy-efficient solar-powered street lights across the village to improve safety and visibility during the night. These lights are equipped with automatic sensors.",
+    "budget": "₹2,50,000",
+    "status": "Completed",
+    "progress": 100,
+    "expectedCompletionDate": "10 Jan 2024",
+    "imageUrl": "https://images.unsplash.com/photo-1509391366360-feaffa64d4c3?q=80&w=400&auto=format&fit=crop",
+    "beforeImageUrl": "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=400&auto=format&fit=crop",
+    "afterImageUrl": "https://images.unsplash.com/photo-1509391366360-feaffa64d4c3?q=80&w=400&auto=format&fit=crop"
+  }
+]

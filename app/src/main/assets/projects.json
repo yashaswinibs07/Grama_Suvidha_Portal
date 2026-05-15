@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Gram Panchayat Road Asphalting",
+    "description": "Comprehensive road repair and asphalting for the main village approach road connecting to the state highway. This will facilitate easier transport for agricultural produce.",
+    "budget": "₹12,50,000",
+    "status": "In Progress",
+    "progress": 45,
+    "expectedCompletionDate": "15 May 2026",
+    "imageBefore": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=800&auto=format&fit=crop",
+    "imageAfter": "https://images.unsplash.com/photo-1596395819057-e37f55a85199?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Village Lake Rejuvenation (Kere)",
+    "description": "De-silting and strengthening the embankments of the village lake to improve water table levels and provide sustainable irrigation for local farmers.",
+    "budget": "₹25,00,000",
+    "status": "Ongoing",
+    "progress": 25,
+    "expectedCompletionDate": "10 Oct 2026",
+    "imageBefore": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop",
+    "imageAfter": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Borewell Installation & Pipeline",
+    "description": "Drilling three new high-yield borewells and laying 2km of pipeline to ensure 24/7 drinking water supply to the SC/ST colony and surrounding houses.",
+    "budget": "₹8,00,000",
+    "status": "Completed",
+    "progress": 100,
+    "expectedCompletionDate": "20 Jan 2026",
+    "imageBefore": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?q=80&w=800&auto=format&fit=crop",
+    "imageAfter": "https://images.unsplash.com/photo-1542317854-f9596af05097?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "Government School Smart Classroom",
+    "description": "Renovating the primary school building and installing digital smart boards and high-speed internet to modernize rural education for village children.",
+    "budget": "₹4,50,000",
+    "status": "In Progress",
+    "progress": 70,
+    "expectedCompletionDate": "01 Jun 2026",
+    "imageBefore": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
+    "imageAfter": "https://images.unsplash.com/photo-1523050853023-8c2d2909f4f3?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "Community Toilet Block (Swachh Bharat)",
+    "description": "Construction of separate toilet blocks for men and women in the village marketplace to maintain hygiene and achieve 100% open-defecation-free status.",
+    "budget": "₹6,00,000",
+    "status": "Completed",
+    "progress": 100,
+    "expectedCompletionDate": "15 Mar 2026",
+    "imageBefore": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop",
+    "imageAfter": "https://images.unsplash.com/photo-1520038410233-7141be7e6f97?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 6,
+    "name": "Anganwadi Building Construction",
+    "description": "Building a new Anganwadi center with a dedicated kitchen and play area to ensure better nutrition and early education for village toddlers.",
+    "budget": "₹15,00,000",
+    "status": "Ongoing",
+    "progress": 10,
+    "expectedCompletionDate": "25 Feb 2027",
+    "imageBefore": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=800&auto=format&fit=crop",
+    "imageAfter": "https://images.unsplash.com/photo-1503387762-592dee58c460?q=80&w=800&auto=format&fit=crop"
+  }
+]

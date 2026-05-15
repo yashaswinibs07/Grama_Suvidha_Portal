@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarDetail"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Gram Panchayat Road Asphalting" />
+
+            <TextView
+                android:id="@+id/detailStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailTitle"
+                tools:text="Status: In Progress" />
+
+            <TextView
+                android:id="@+id/detailDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="4dp"
+                android:textSize="16sp"
+                android:alpha="0.85"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailStatus"
+                tools:text="Comprehensive road repair and asphalting for the main village corridor." />
+
+            <ProgressBar
+                android:id="@+id/detailProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:progressDrawable="@android:drawable/progress_horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/detailProgressText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailDescription"
+                tools:progress="65" />
+
+            <TextView
+                android:id="@+id/detailProgressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/detailProgressBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/detailProgressBar"
+                tools:text="65%" />
+
+            <TextView
+                android:id="@+id/detailBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailProgressBar"
+                tools:text="Budget: ₹18,50,000" />
+
+            <TextView
+                android:id="@+id/detailDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:alpha="0.7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailBudget"
+                tools:text="Expected Completion: 20 Jun 2026" />
+
+            <View
+                android:id="@+id/imageDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="32dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintTop_toBottomOf="@id/detailDate" />
+
+            <TextView
+                android:id="@+id/beforeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/before"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageDivider" />
+
+            <ImageView
+                android:id="@+id/imageBefore"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/before"
+                app:layout_constraintEnd_toStartOf="@+id/imageAfter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/beforeLabel"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/afterLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/imageAfter"
+                app:layout_constraintTop_toTopOf="@id/beforeLabel"
+                android:text="@string/after"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageAfter"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/after"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageBefore"
+                app:layout_constraintTop_toBottomOf="@id/afterLabel"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <View
+                android:id="@+id/feedbackDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="32dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintTop_toBottomOf="@id/imageBefore" />
+
+            <TextView
+                android:id="@+id/feedbackLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/citizen_feedback"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/feedbackDivider" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:numStars="5"
+                android:stepSize="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/feedbackLabel" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/issueInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/feedback_hint"
+                app:layout_constraintTop_toBottomOf="@id/ratingBar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextIssue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:lines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonSubmitFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/submit_feedback"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/issueInputLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
